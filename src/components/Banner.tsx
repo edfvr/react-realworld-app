@@ -1,3 +1,5 @@
+import '../App.css'
+
 export default function Banner(): JSX.Element{
     return (
         <div className="banner" show-authed="false">
