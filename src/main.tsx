@@ -7,7 +7,7 @@ import Home from './routes/Home';
 import SignInForm from './routes/SignIn';
 import SignUpForm from './routes/SignUp';
 import store from './redux/store';
-import ArticlePage from './components/ArticlePage';
+import ArticlePage from './routes/ArticlePage';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
