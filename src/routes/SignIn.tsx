@@ -37,7 +37,7 @@ export default function SignInForm(): JSX.Element {
                 <div className="col-md-6 offset-md-3 col-xs-12">
                     <h1 className='text-xs-center ng-binding'>Sign in</h1>
                     <p className="text-xs-center">
-                        <a href="/signup">Need an account? </a>
+                        <a href="/register">Need an account? </a>
                     </p>
                     <form onSubmit={handleSubmit}>
                         <fieldset className='form-group'>

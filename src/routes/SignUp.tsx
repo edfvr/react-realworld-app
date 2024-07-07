@@ -39,9 +39,9 @@ export default function SignUp(): JSX.Element {
         <div className="col-md-6 offset-md-3 col-xs-12">
           <h1 className="text-xs-center ng-binding">Sign up</h1>
           <p className="text-xs-center">
-            <Link to="/signin">Have an account?</Link> {/* Use Link for navigation */}
+            <Link to="/login">Have an account?</Link>
           </p>
-          {error && <p className="text-xs-center text-danger">{error}</p>} {/* Display error message */}
+          {error && <p className="text-xs-center text-danger">{error}</p>} 
           <form onSubmit={handleSubmit}>
             <fieldset className="form-group">
               <input
