@@ -7,6 +7,7 @@ import Home from './routes/Home';
 import SignInForm from './routes/SignIn';
 import SignUpForm from './routes/SignUp';
 import store from './redux/store';
+import ArticlePage from './components/ArticlePage';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Routes>
           <Route path="/" element={<App />}>
             <Route index element={<Home />} />
+            <Route path="/article/:slug" element={<ArticlePage/>} />
             <Route path="/login" element={<SignInForm />} />
             <Route path="/register" element={<SignUpForm />} />
           </Route>
