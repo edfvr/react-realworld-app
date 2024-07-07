@@ -2,23 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import api from '../services/api';
-
-interface Article {
-    slug: string;
-    title: string;
-    description: string;
-    body: string;
-    tagList: string[];
-    createdAt: string;
-    favorited: boolean;
-    favoritesCount: number;
-    author: {
-        username: string;
-        bio: string;
-        image: string;
-        following: boolean;
-    };
-}
+import { Article } from '../interfaces/Article'
 
 const ArticlePage: React.FC = () => {
     const [article, setArticle] = useState<Article | null>(null);

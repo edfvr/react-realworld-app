@@ -4,23 +4,8 @@ import ArticleList from '../components/ArticleList';
 import PopularTags from '../components/PopularTags';
 import Pagination from '../components/Pagination';
 import api from '../services/api';
+import { Article } from '../interfaces/Article'
 
-interface Article {
-    slug: string;
-    title: string;
-    description: string;
-    body: string;
-    tagList: string[];
-    createdAt: string;
-    favorited: boolean;
-    favoritesCount: number;
-    author: {
-        username: string;
-        bio: string;
-        image: string;
-        following: boolean;
-    };
-}
 
 export default function Home(): JSX.Element {
     const [articles, setArticles] = useState<Article[]>([]);
