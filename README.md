@@ -1,30 +1,57 @@
-# React + TypeScript + Vite
+# RealWorld App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React implementation of the [RealWorld](https://github.com/gothinkster/realworld) front-end spec, built with Vite and TypeScript.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Node.js (version 14 or later recommended)
+- npm (usually comes with Node.js)
 
-- Configure the top-level `parserOptions` property like this:
+### Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1. Clone the repository to your local machine:
+```bash
+git clone https://github.com/edfvr/react-realworld-app.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navigate to the project directory:
+```bash
+cd react-realworld-app
+```
+
+3. Install the project dependencies:
+```bash
+cd npm install
+```
+
+### Usage
+
+#### Development Server
+
+To run the project, follow these steps:
+
+1. Start the development server by executing the command:
+```bash
+npm run dev
+```
+2. Open a web browser and navigate to:
+
+## Features
+
+- UI & API Integration
+- Authentication
+- CRUD
+
+## Technologies Used
+
+- React
+- TypeScript
+- Vite
+
+## License
+
+This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
+
