@@ -6,7 +6,7 @@ import { Article } from '../interfaces/Article'
 
 const ArticlePage: React.FC = () => {
     const [article, setArticle] = useState<Article | null>(null);
-    const [isAuthor, setIsAuthor] = useState(false); // To-do: implement logic to determine if the current user is the author
+    const [isAuthor] = useState(false); // To-do: implement logic to determine if the current user is the author
     const { slug } = useParams<{ slug: string }>();
 
     useEffect(() => {
@@ -36,9 +36,9 @@ const ArticlePage: React.FC = () => {
         // Implement favorite functionality
     };
 
-    const handleEdit = () => {
+    //const handleEdit = () => {
         // Implement edit functionality
-    };
+    //};
 
     const handleDelete = () => {
         // Implement delete functionality
